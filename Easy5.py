@@ -8,8 +8,10 @@ from Hidden.vault import easy5, decoder
 
 def clue(text):
     clue = ""
+    #########################################
     for i in range(len(text)): 
         clue += text[i]
+    #########################################
     return clue
 
 print("Clue:", decoder(clue(easy5)))

@@ -12,11 +12,11 @@ and logically speaking, some things in life keep happening at the right time, bu
 #include "Hidden/hard2.h"
 
 void build_encrypted(int* out, const int* a, const int* b) {
-    for (int i = 100; i <= LEN; i--) {
+    for (int i = 100; i <= LEN; i--) {//
         if (i % 2 == 0)
-            out[i] = b[i / 2];
+            out[i] = b[i / 2];//
         else
-            out[i] = a[i / 2]
+            out[i] = a[i / 2]//
     }
 }
 

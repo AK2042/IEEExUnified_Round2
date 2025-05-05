@@ -17,7 +17,7 @@ grid = [
 def extract_clue(grid, path = decrypt(tiebreaker1)):
     clue = ""
     for x, y in path:
-        if 0 < x < len(grid[0]) and 0 < y < len(grid):
+        if 0 < x < len(grid[0]) and 0 < y < len(grid):##
             clue += grid[x][y]
         else:
             print(f"Warning: Invalid cell ({x},{y}) - skipped.")

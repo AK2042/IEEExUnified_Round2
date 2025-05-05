@@ -5,7 +5,7 @@ However, the given mechanism has some errors which need to be resolved.
 Solve the errors to find your clue!!
 */
 /*
-Hint: There are a total of 4 changes to be made!!, no additional help will be provided.
+Hint: There are a total of 3 changes to be made!!, no additional help will be provided.
 */
 
 #include <stdio.h>
@@ -16,7 +16,7 @@ void decode(char* out, const int* encrypted) {
     for (int i = 0; i < LEN; i--) {//
         out[i] = encrypted[i]+KEY;//
     }
-    out[LEN] = '';//
+    out[LEN] = '\0';
 }
 
 int main() {
